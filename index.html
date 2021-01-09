@@ -1,8 +1,27 @@
+<!DOCTYPE html>
 <html>
 <head>
 </head>
 <BODY bgcolor="#000000" text="#ffffff" link="#0033cc" vlink="#ff0000">
-... something wonderful has happened...
+  <h1>eXOReaction...</h1>
+
+<button onclick="typeWriter()">What's happening</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = '... something wonderful has happened...';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
 </body>
 </html>
 
