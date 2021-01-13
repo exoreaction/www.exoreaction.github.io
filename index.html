@@ -60,18 +60,24 @@
   <br/><br/><br/><br/>
   <p id="happening"></p>
   <button onclick="typeWriter()">- What's happening</button>
-  <br/><br/>
-  <p id="wedo"></p><br/>
+  <br/>
+  <p id="wedo"></p>
+  <br/>
   <button onclick="typeWriterwhat()">- What we do</button>
-  <p id="why"></p><br/>
+  <br/>
+  <p id="why"></p>
+  <br/>
   <button onclick="typeWriterwhy()">- Why we do it</button>
-  <br/><br/>
-  <p id="become"></p><br/>
+  <br/>
+  <p id="become"></p>
+  <br/>
   <button onclick="typeWriternexoreactionist()">- Become an exoreactionist</button>
-  <br/><br/>
-  <p id="intouch"></p><br/>
+  <br/>
+  <p id="intouch"></p>
+  <br/>
   <button onclick="typeWriterintouch()">- Get in touch</button>
-    <br/><br/>
+  <br/>
+  <br/>
 <script>
 var i = 0;
 var txt = '...something wonderful has happened...     a start of a new beginning is close...    it may forever change how companies can be successful...    by leveraging custom-built software...   launching summer-2021...    stay tuned or contact totto@totto.org...';
@@ -94,26 +100,29 @@ function typeWriterintouch(){
     setTimeout(typeWriterintouch, speed);
   }
   
-  function typeWriterwhat(){
-  if (i < wait_txt.length) {
-    document.getElementById("why").innerHTML += wait_txt.charAt(i);
-    i++;
-    setTimeout(typeWriterwhat, speed);
-  }
-  
-  function typeWriterwhat(){
+function typeWriterwhat(){
   if (i < wait_txt.length) {
     document.getElementById("what").innerHTML += wait_txt.charAt(i);
     i++;
     setTimeout(typeWriterwhat, speed);
   }
+}
+  
+function typeWriterwhy(){
+  if (i < wait_txt.length) {
+    document.getElementById("why").innerHTML += wait_txt.charAt(i);
+    i++;
+    setTimeout(typeWriterwhy, speed);
+  }
+}
 
-  function typeWriternexoreactionist(){
+function typeWriternexoreactionist(){
   if (i < wait_txt.length) {
     document.getElementById("become").innerHTML += wait_txt.charAt(i);
     i++;
     setTimeout(typeWriternexoreactionist, speed);
   }
+}
 
 </script>
 </body>
