@@ -58,27 +58,31 @@
   </semantics>
 </math>
   <br/><br/><br/><br/>
-  <p id="demo"></p>
+  <p id="happening"></p>
   <button onclick="typeWriter()">- What's happening</button>
   <br/><br/>
   <p id="wedo"></p><br/>
-  - What we do<br/><br/>
+  <button onclick="typeWriterwhat()">- What we do</button>
   <p id="why"></p><br/>
-  - Why we do it<br/><br/>
+  <button onclick="typeWriterwhy()">- Why we do it</button>
+  <br/><br/>
   <p id="become"></p><br/>
-  - Become an exoreactionist<br/><br/>
+  <button onclick="typeWriternexoreactionist()">- Become an exoreactionist</button>
+  <br/><br/>
   <p id="intouch"></p><br/>
-  <button onclick="typeWriterintouch()">- Get in touch<br/><br/>
+  <button onclick="typeWriterintouch()">- Get in touch</button>
+    <br/><br/>
 <script>
 var i = 0;
 var txt = '...something wonderful has happened...     a start of a new beginning is close...    it may forever change how companies can be successful...    by leveraging custom-built software...   launching summer-2021...    stay tuned or contact totto@totto.org...';
 var contact_txt = '     totto@totto.org....          https://twitter.com/javatotto....      javatotto@gmail.com@Hangouts....       +47 9690 9999....';
+var wait_txt = '      more details will be released in the coming weeks...    stay tuned or contact totto@totto.org...';
 
 var speed = 80;
 
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
+    document.getElementById("happening").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
@@ -87,8 +91,30 @@ function typeWriterintouch(){
   if (i < contact_txt.length) {
     document.getElementById("intouch").innerHTML += contact_txt.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(typeWriterintouch, speed);
   }
+  
+  function typeWriterwhat(){
+  if (i < wait_txt.length) {
+    document.getElementById("why").innerHTML += wait_txt.charAt(i);
+    i++;
+    setTimeout(typeWriterwhat, speed);
+  }
+  
+  function typeWriterwhat(){
+  if (i < wait_txt.length) {
+    document.getElementById("what").innerHTML += wait_txt.charAt(i);
+    i++;
+    setTimeout(typeWriterwhat, speed);
+  }
+
+  function typeWriternexoreactionist(){
+  if (i < wait_txt.length) {
+    document.getElementById("become").innerHTML += wait_txt.charAt(i);
+    i++;
+    setTimeout(typeWriternexoreactionist, speed);
+  }
+
 </script>
 </body>
 </html>
