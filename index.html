@@ -95,6 +95,7 @@ var k = 0;
 var txt = '... something wonderful has happened...... a start of a new beginning is close...... it may forever change how companies can be successful...... by leveraging custom-built software...... launching summer-2021... ';
 var contact_txt = '.......... totto@totto.org........ https://twitter.com/javatotto....... javatotto@gmail.com@Hangouts....... +47 9690 9999....';
 var wait_txt = '.................. more details will be released in the coming weeks...... stay tuned..';
+var exoreactionist_txt = '........ there is room for both people which want to be owners and people which want a low-risk (and possibly everything in between) way from being developer/consultant reach-out and we can discuss which may be a win-win.';
 
 var speed = 80;
 
@@ -140,8 +141,8 @@ function typeWritercustomer() {
 }
   
 function typeWriternexoreactionist() {
-  if (b < wait_txt.length) {
-    document.getElementById("become").innerHTML += wait_txt.charAt(b);
+  if (b < exoreactionist_txt.length) {
+    document.getElementById("become").innerHTML += exoreactionist_txt.charAt(b);
     b++;
     setTimeout(typeWriternexoreactionist, speed);
   }
