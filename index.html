@@ -79,6 +79,8 @@
   <button onclick="typeWriterintouch()">- Get in touch</button>
   <br/>
   <br/>
+
+  
 <script>
 var i = 0;
 var txt = '...something wonderful has happened...     a start of a new beginning is close...    it may forever change how companies can be successful...    by leveraging custom-built software...   launching summer-2021...    stay tuned or contact totto@totto.org...';
@@ -94,14 +96,16 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
-function typeWriterintouch(){  
+
+function typeWriterintouch() {  
   if (i < contact_txt.length) {
     document.getElementById("intouch").innerHTML += contact_txt.charAt(i);
     i++;
     setTimeout(typeWriterintouch, speed);
   }
-  
-function typeWriterwhat(){
+}  
+
+function typeWriterwhat() {
   if (i < wait_txt.length) {
     document.getElementById("what").innerHTML += wait_txt.charAt(i);
     i++;
@@ -109,7 +113,7 @@ function typeWriterwhat(){
   }
 }
   
-function typeWriterwhy(){
+function typeWriterwhy() {
   if (i < wait_txt.length) {
     document.getElementById("why").innerHTML += wait_txt.charAt(i);
     i++;
@@ -117,7 +121,7 @@ function typeWriterwhy(){
   }
 }
 
-function typeWriternexoreactionist(){
+function typeWriternexoreactionist() {
   if (i < wait_txt.length) {
     document.getElementById("become").innerHTML += wait_txt.charAt(i);
     i++;
