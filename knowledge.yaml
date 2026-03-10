@@ -1,0 +1,34 @@
+id: www-exoreaction-github-io
+name: "eXOReaction Website"
+version: "1.0.0"
+description: "Static website for exoreaction.com, containing the company homepage, about us, case studies, and what-we-do pages, with scraped WordPress content and SVG/image assets."
+units:
+  - id: homepage
+    name: "Homepage"
+    type: frontend
+    description: "Main index.html landing page for exoreaction.com with company overview and navigation."
+    path: index.html
+
+  - id: about-us
+    name: "About Us"
+    type: frontend
+    description: "About us section describing the eXOReaction team, background, and mission."
+    path: about-us
+
+  - id: case-studies
+    name: "Case Studies"
+    type: frontend
+    description: "Client case study pages demonstrating eXOReaction's work and results."
+    path: case-studies
+
+  - id: what-we-do
+    name: "What We Do"
+    type: frontend
+    description: "Service offering pages describing eXOReaction's consulting, AI-augmented development, and methodology services."
+    path: what-we-do
+
+  - id: assets
+    name: "Brand Assets"
+    type: docs
+    description: "SVG and image brand assets including eXOReaction logos in BW, cyan/black, and rotated variants."
+    path: assets
