@@ -1,3 +1,17 @@
+kcp_version: "0.21"
+updated: "2026-06-20"
+language: en
+license: "Apache-2.0"
+indexing: private
+temporal:
+  valid_from: "2026-03-10"
+signing:
+  scheme: ed25519
+  scope: this-manifest
+  public_key: "MCowBQYDK2VwAyEAudBZ8a/Fjz0cwpWTV0fVrdQPYEUWxv2FruVfRw7acYQ="
+  signature: "https://raw.githubusercontent.com/exoreaction/www.exoreaction.github.io/master/knowledge.yaml.sig"
+not_for: []
+
 id: www-exoreaction-github-io
 name: "eXOReaction Website"
 version: "1.0.0"
@@ -8,27 +22,42 @@ units:
     type: frontend
     description: "Main index.html landing page for exoreaction.com with company overview and navigation."
     path: index.html
+    content_hash:
+      algorithm: sha256
+      value: ""
 
   - id: about-us
     name: "About Us"
     type: frontend
     description: "About us section describing the eXOReaction team, background, and mission."
     path: about-us
+    content_hash:
+      algorithm: sha256
+      value: ""
 
   - id: case-studies
     name: "Case Studies"
     type: frontend
     description: "Client case study pages demonstrating eXOReaction's work and results."
     path: case-studies
+    content_hash:
+      algorithm: sha256
+      value: ""
 
   - id: what-we-do
     name: "What We Do"
     type: frontend
     description: "Service offering pages describing eXOReaction's consulting, AI-augmented development, and methodology services."
     path: what-we-do
+    content_hash:
+      algorithm: sha256
+      value: ""
 
   - id: assets
     name: "Brand Assets"
     type: docs
     description: "SVG and image brand assets including eXOReaction logos in BW, cyan/black, and rotated variants."
     path: assets
+    content_hash:
+      algorithm: sha256
+      value: ""
