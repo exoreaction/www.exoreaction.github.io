@@ -9,31 +9,36 @@ signing:
   scheme: ed25519
   scope: this-manifest
   public_key: "MCowBQYDK2VwAyEAudBZ8a/Fjz0cwpWTV0fVrdQPYEUWxv2FruVfRw7acYQ="
-  signature: "https://raw.githubusercontent.com/exoreaction/www.exoreaction.github.io/master/knowledge.yaml.sig"
+  signature: "https://raw.githubusercontent.com/exoreaction/www.exoreaction.githu\
+    b.io/master/knowledge.yaml.sig"
 not_for: []
 
 id: www-exoreaction-github-io
 name: "eXOReaction Website"
 version: "1.0.0"
-description: "Static website for exoreaction.com, containing the company homepage, about us, case studies, and what-we-do pages, with scraped WordPress content and SVG/image assets."
+description: "Static website for exoreaction.com, containing the company
+  homepage, about us, case studies, and what-we-do pages, with scraped WordPress
+  content and SVG/image assets."
 units:
   - id: homepage
     name: "Homepage"
     type: frontend
-    description: "Main index.html landing page for exoreaction.com with company overview and navigation."
+    description: "Main index.html landing page for exoreaction.com with company
+      overview and navigation."
     path: index.html
     content_hash:
       algorithm: sha256
-      value: ""
+      value: "cf564d4cfebc62e69051c30df2a4a853ef4c5c9e1acd2ec75281e452a228e259"
 
   - id: about-us
     name: "About Us"
     type: frontend
-    description: "About us section describing the eXOReaction team, background, and mission."
+    description: "About us section describing the eXOReaction team, background, and
+      mission."
     path: about-us
     content_hash:
       algorithm: sha256
-      value: ""
+      value: "3f2689b0f5de9e39e4065b978eefa7f602c9933f3657372f4591ab1deee753b7"
 
   - id: case-studies
     name: "Case Studies"
@@ -42,22 +47,24 @@ units:
     path: case-studies
     content_hash:
       algorithm: sha256
-      value: ""
+      value: "b2a3318323623ad0ce67edb62562f58c9aee175db80c6196f5c7228fe75c1ed8"
 
   - id: what-we-do
     name: "What We Do"
     type: frontend
-    description: "Service offering pages describing eXOReaction's consulting, AI-augmented development, and methodology services."
+    description: "Service offering pages describing eXOReaction's consulting,
+      AI-augmented development, and methodology services."
     path: what-we-do
     content_hash:
       algorithm: sha256
-      value: ""
+      value: "9fe0adef98a976b58a39b2d91074a0f3af2046353150dd08e316d02e28d3e245"
 
   - id: assets
     name: "Brand Assets"
     type: docs
-    description: "SVG and image brand assets including eXOReaction logos in BW, cyan/black, and rotated variants."
+    description: "SVG and image brand assets including eXOReaction logos in BW,
+      cyan/black, and rotated variants."
     path: assets
     content_hash:
       algorithm: sha256
-      value: ""
+      value: "193ef546d918a95a1fed9b3f3c2fd1b238b4ae69592b19f248599a1142dfe9a9"
